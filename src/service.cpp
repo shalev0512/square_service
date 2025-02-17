@@ -18,6 +18,7 @@ void SquareIntService::handle_service(const std::shared_ptr<square_service::srv:
 {
     int64_t input_num = request->number;
     response->square = pow(input_num, 0.5);
+    response->cube = pow(input_num, 2);
     RCLCPP_INFO(this->get_logger(), "Got request - Number %ld", request->number);
-    RCLCPP_INFO(this->get_logger(), "Send Response - Squred Number: %lf", response->square);
+    RCLCPP_INFO(this->get_logger(), "Send Response - Squred Number: %lf & Cubed Number: %ld", response->square, response->cube);
 }

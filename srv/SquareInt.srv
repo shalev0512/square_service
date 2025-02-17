@@ -1,3 +1,4 @@
-int64 number   # Request: number to square
+int64 number
 ---
-float64 square   # Response: squared result
+float64 square
+int64 cube

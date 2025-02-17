@@ -25,7 +25,7 @@ void SquareIntClient::send_request(int64_t num){
         request,
         [this, num](rclcpp::Client<square_service::srv::SquareInt>::SharedFuture future) {
             RCLCPP_INFO(this->get_logger(), "Number: %ld", num);
-            RCLCPP_INFO(this->get_logger(), "Square: %lf", future.get()->square);
+            RCLCPP_INFO(this->get_logger(), "Square: %lf Cube: %ld", future.get()->square, future.get()->cube);
         }
     );
 }
