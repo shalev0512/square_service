@@ -1,0 +1,3 @@
+int64 number   # Request: number to square
+---
+float64 square   # Response: squared result
