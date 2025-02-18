@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/shalev/ros2_ws/install/square_service/local/lib/python3.10/dist-packages",
+        "/home/shalev/ros2_ws/install/simple_comm/lib/python3.10/site-packages",
+        "/home/shalev/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages",
+        "/home/shalev/install/square_service/local/lib/python3.10/dist-packages",
+        "/home/shalev/install/simple_comm/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/shalev/ros2_ws/install/square_service/local/lib/python3.10/dist-packages",
+        "/home/shalev/ros2_ws/install/simple_comm/lib/python3.10/site-packages",
+        "/home/shalev/ros2_ws/install/my_interfaces/local/lib/python3.10/dist-packages",
+        "/home/shalev/install/square_service/local/lib/python3.10/dist-packages",
+        "/home/shalev/install/simple_comm/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

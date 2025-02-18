@@ -1,11 +1,23 @@
 #include "square_service/client.hpp"
 #define CLIENT_NAME "square_root_integer_client"
 
+/*
+input: none.
+output: Initializes the SquareIntClient node and creates the client for the square_int service.
+description: Constructs a SquareIntClient object by initializing the ROS2 node with the client name and setting up the client to send requests to the square_int service.
+*/
 SquareIntClient::SquareIntClient(): Node(CLIENT_NAME)
 {
     client_ = create_client<square_service::srv::SquareInt>("square_int");
 }
 
+
+/*
+input:
+    - num: The integer value to be sent as a request to the square_int service.
+output: none.
+description: Waits for the square_int service to be available, then creates and sends an asynchronous request containing the provided number. Once the response is received, it logs the details of the square, cube, square root, and whether the square root is perfect.
+*/
 void SquareIntClient::send_request(int64_t num)
 {
     //waiting for service
