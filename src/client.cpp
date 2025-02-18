@@ -42,7 +42,7 @@ void SquareIntClient::send_request(int64_t num)
         {
             std::string isPrefectSquareRoot = future.get()->is_perfect_square_root ? "true": "false";
             RCLCPP_INFO(this->get_logger(), "Number: %ld", num);
-            RCLCPP_INFO(this->get_logger(), "Send Response - Squred Number: %ld & Cubed Number: %ld & Square Root Number: %lf & is perfect squareRoot: %s", future.get()->square, future.get()->cube, future.get()->square_root, isPrefectSquareRoot.c_str());
+            RCLCPP_INFO(this->get_logger(), "Got Response - Squred Number: %ld & Cubed Number: %ld & Square Root Number: %lf & is perfect squareRoot: %s", future.get()->square, future.get()->cube, future.get()->square_root, isPrefectSquareRoot.c_str());
         }
     );
 }
