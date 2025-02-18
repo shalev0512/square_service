@@ -1,4 +1,6 @@
 int64 number
 ---
-float64 square
+int64 square
 int64 cube
+float64 square_root
+bool is_perfect_square_root
